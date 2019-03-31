@@ -37,25 +37,6 @@ body, .wrap, #slider, .slide-content {
 	color: #fff;
 	text-shadow: 2px 2px #F44336;
 	color: #fff;
-    -webkit-animation: neon1 1s ease-in-out infinite alternate;
-    -moz-animation: neon1 1s ease-in-out infinite alternate;
-    animation: neon1 1s ease-in-out infinite alternate;
-}
-.slide-content span:hover {
-	-webkit-animation: none;
-    -moz-animation: none;
-    animation: none;
-}
-
-/*glow for webkit*/
-
-@-webkit-keyframes neon1 {
-  from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
-  }
-  to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
-  }
 }
 
 .arrow {
@@ -96,7 +77,7 @@ body, .wrap, #slider, .slide-content {
 		padding-top: 20px;
 	}
 	.slide-content span {
-		font-size: 2.2rem;
+		font-size: 2.3em;
 	}	
 	.arrow {
 		margin-top: 0;
