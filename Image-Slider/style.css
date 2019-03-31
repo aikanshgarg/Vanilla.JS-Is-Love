@@ -1,0 +1,114 @@
+body, .wrap, #slider, .slide-content {
+	font-family: 'Pacifico', cursive;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	overflow-x: hidden;
+	background: #F44336;
+}
+
+.wrap { position: relative; }
+
+.slide {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.slide1 { background-image: url('./assets/img1.jpg'); }
+.slide2 { background-image: url('./assets/img2.jpg'); }
+.slide3 { background-image: url('./assets/img3.jpg'); }
+.slide4 { background-image: url('./assets/img4.jpg'); }
+.slide5 { background-image: url('./assets/img5.jpg'); }
+
+
+.slide-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background: linear-gradient(rgba(255,17,119,.2),rgba(255,17,119,.2)); 
+}
+
+.slide-content span {
+	font-size: 5rem;
+	color: #fff;
+	text-shadow: 2px 2px #F44336;
+	color: #fff;
+    -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+    -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+    animation: neon1 1.5s ease-in-out infinite alternate;
+}
+.slide-content span:hover {
+	-webkit-animation: none;
+    -moz-animation: none;
+    animation: none;
+}
+
+/*glow for webkit*/
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF1177, 0 0 70px #FF1177, 0 0 80px #FF1177, 0 0 100px #FF1177, 0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF1177, 0 0 35px #FF1177, 0 0 40px #FF1177, 0 0 50px #FF1177, 0 0 75px #FF1177;
+  }
+}
+
+.arrow {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	margin-top: -35px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	transition: all .5s;
+	opacity: .7;
+}
+
+#arrow-left {
+	border-width: 30px 40px 30px 0;
+	border-color: transparent #fff transparent transparent;
+	left: 0;
+	margin-left: 30px;
+}
+#arrow-left:hover {
+	border-color: transparent #F44336 transparent transparent;
+}
+
+#arrow-right {
+	border-width: 30px 0 30px 40px;
+	border-color: transparent transparent transparent #fff;
+	right: 0;
+	margin-right: 30px;
+}
+#arrow-right:hover {
+	border-color: transparent transparent transparent #F44336;
+}
+
+@media(max-width: 500px) {
+	.slide-content {
+		justify-content: flex-start;
+		padding-top: 10px;
+	}
+	.slide-content span {
+		font-size: 2.5rem;
+	}	
+	.arrow {
+		margin-top: 0;
+	}
+	#arrow-left {
+		border-width: 15px 25px 15px 0;
+		margin-left: 15px;
+	}
+	#arrow-right {
+		border-width: 15px 0 15px 25px;
+		border-color: transparent transparent transparent #fff;
+		right: 0;
+		margin-right: 15px;
+	}
+}
