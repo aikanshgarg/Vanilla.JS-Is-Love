@@ -1,0 +1,198 @@
+body {
+	font-size: 1.6rem;
+	line-height: 1.6;
+	background: #F44336;
+	background: url(bg.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	overflow: hidden;
+	font-family: 'Mystery Quest', cursive;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+	width: 30%;
+	background: transparent;
+	padding: 1rem;
+	color: #fff;
+	box-shadow: 0 2px 10px #CEA263;
+    border-style: hidden;
+	cursor: pointer;
+	font-family: 'Mystery Quest', cursive;
+	font-size: 2rem;
+	font-weight: bold;
+	transition: all .2s;
+	animation: shake 6s cubic-bezier(.36,.07,.19,.97) both infinite;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+.button:hover, .button:focus {
+	transform: translateX(-2px);
+	transform: translateY(-2px);
+	border: none;
+	outline: none;
+	opacity: .5;
+}
+
+.modal {
+	display: none;
+	position: fixed; /*keep it at same position*/
+	z-index: 1; /*above all*/
+	top: 0;
+	left: 0;
+	height: 100%; /*take up whole window*/
+	width: 100%; /*take up whole window*/
+	overflow: auto; /*enable scroll-behavior if needed*/
+	background: rgba(0, 0, 0, .5);
+}
+
+.modal-content {
+	background: #f4f4f4;
+	margin: 2.5% auto;
+	width: 80%;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px rgba(0, 0, 0, .17);
+	border-radius: 3px;
+	text-align: center;
+    background: #17181A;
+	animation-name: modalopen-2;
+	animation-duration: .7s; 
+}
+
+.modal-header, .modal-footer {
+	padding: 10px;
+	color: #CEA263;
+}
+
+.modal-header h2 {
+	margin: 0;
+}
+
+.closeBtn {
+	float: right;
+	color: #CEA263;
+	font-size: 2rem;
+	transition: all .2s;
+}
+.closeBtn:hover, .closeBtn:focus {
+	cursor: pointer;
+	opacity: .6;
+	text-decoration: none;
+}
+
+.bg-video {
+	top: 0;
+	left: 0;
+	height: 100%;
+	max-height: 60vh;
+	width: 100%;
+	z-index: -1; /*// to hide behind all elements*/
+	opacity: 1;
+	overflow: hidden;
+}
+.bg-video__content {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+
+@media screen and (max-width: 1024px) {
+	.modal-content {
+		margin-top: 25%;
+		animation-name: modalopen-25;
+	}
+	.bg-video {
+		max-height: 100%;
+	}
+	.button {
+		width: 70%;
+		font-weight: normal;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.modal-content {
+		margin-top: 50%;
+		animation-name: modalopen-50;
+		width: 85%;
+	}
+	body {
+		font-size: 1.2rem;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	h3 {
+		font-size: 1em;
+	}
+	.button {
+		font-size: 1.2rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mozilla based browsers */
+*::-moz-selection {
+       background-color: #17181A;
+       color: #CEA263;
+}
+
+/* Works in Safari */
+*::selection {
+       background-color: #17181A;
+       color: #CEA263;
+}
+
+
+
+@keyframes modalopen-2 {
+	from { opacity: 0; margin-top: 0%; }
+	to { opacity: 1; margin-top:2.5%; }
+}
+
+@keyframes modalopen-25 {
+	from { opacity: 0; margin-top: 0%; }
+	to { opacity: 1; margin-top: 25%; }
+}
+
+@keyframes modalopen-50 {
+	from { opacity: 0; margin-top: 0%; }
+	to { opacity: 1; margin-top: 50%; }
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
