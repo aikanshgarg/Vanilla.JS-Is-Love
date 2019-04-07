@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header, footer {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	color: #fff;
+}
+
+header {
+	background: #9CECFB;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+footer {
+	background: #56CCF2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to top, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to top, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+header h1 {
+	font-size: 50px; 
+}
+
+.animation {
+	height: 100vh;
+	background: #03001e;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #fdeff9, #ec38bc, #7303c0, #03001e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	position: relative; /*parent of plane*/
+	overflow: hidden; /*dont show plane if it leaves the viewport*/
+}
+
+.paper-plane {
+	position: absolute; /*to move inside parent*/
+	height: 100px;
+	top: 50%; /*center inside parent*/
+	left: 0; /*start from left*/
+}

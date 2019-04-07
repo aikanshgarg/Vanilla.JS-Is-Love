@@ -2,7 +2,7 @@
 const questions = [
 	{question: 'Enter Your Real Name'},
 	{question: 'Enter Your Alias'},
-	{question: 'Mention Your Super Power'},
+	{question: 'Your Super Power?'},
 	{question: 'Enter Your Email', pattern: /\S+@\S+\.\S+/},
 	{question: 'Create A Password', type: 'password'}
 ];
