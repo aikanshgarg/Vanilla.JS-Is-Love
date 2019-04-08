@@ -66,3 +66,25 @@ section img{
 .bg-active {
 	background: #fff;
 }
+
+@media screen and (max-width: 600px) {
+	.intro-text h1 {
+		font-size: 25px;
+		padding: 1rem;
+		margin-bottom: 0;
+	}
+	.page2 p {
+		font-size: 14px;
+		padding: 1rem;
+	}
+	.intro-text p{
+		font-size: 14px;
+	    padding: 3rem;
+	    padding-top: 0;
+	}
+	.page2 h1 {
+		font-size: 25px;
+		margin-bottom: 0;
+	}
+
+}
