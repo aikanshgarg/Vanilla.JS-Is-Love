@@ -121,15 +121,15 @@ video {
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1100px) {
 	.app {
 		flex-direction: column;
 	  background: #c9e9f6;
 	}
 	.time-select button{
 		width: 28%;
+		font-size: 20px;
 		height: inherit;
-		font-size: 14px;
 		padding-top: .5rem;
 		padding-bottom: .5rem;
 	}
@@ -138,8 +138,11 @@ video {
 		height: 30%;
 		width: 80%;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		position: relative;
+	}
+	.time-select {
+		justify-content: space-between;
 	}
 	.player-container {
 		width: 80%;
@@ -151,9 +154,11 @@ video {
 		width: 12%;
 		position: absolute;
     	top: 33%;
+    	top: 30%;
+    	left: 45%;
 	}
 	.time-display {
-		font-size: 35px;
+		font-size: 50px;
 	}
 
 	.video-container {
@@ -165,4 +170,22 @@ video {
 		height: 100%;
 		object-fit: cover;
 	}
+}
+
+@media screen and (max-width: 600px) {
+	.time-select button {
+		font-size: 14px;
+		
+	}
+	.time-display {
+		font-size: 35px;
+	}
+	.play {
+		width: 12%;
+		position: absolute;
+    	top: 33%;
+	}
+
+
+
 }
