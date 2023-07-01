@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}	
+
+body {
+	font-size: 25px;
+	background: #141414; 
+	color: #fff;
+	font-family: 'Luckiest Guy', cursive;
+	font-family: 'Kaushan Script', cursive;
+}
+
+.btn-lg, label{
+	font-size: 25px;
+	font-family: 'Luckiest Guy', cursive;
+}
+
+::-webkit-input-placeholder, .form-control, .form-control-lg {
+	font-size: 25px;
+	font-family: 'Kaushan Script', cursive;
+}
+
+img {
+	max-width: 15rem;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+	body, .btn-lg, label, ::-webkit-input-placeholder, .form-control, .form-control-lg {
+		font-size: 20px;
+	}
+	img {
+		max-width: 12rem;
+	}
+}
+@media screen and (max-width: 340px) {
+	img {
+		max-width: 10rem;
+	}
+	body, .btn-lg, label, ::-webkit-input-placeholder, .form-control, .form-control-lg {
+		font-size: 18px;
+	}
+}
