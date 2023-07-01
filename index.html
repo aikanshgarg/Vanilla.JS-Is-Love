@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- chrome address bar color -->
+    <meta name="theme-color" content="#F44336" />
+
+	<title>Relive Your Childhood | Aikansh Garg</title>
+	<!-- FAVICON -->
+    <link rel="shortcut icon" href="images/ag.png" type="image/x-icon">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- AOS CSS FOR SCROLL ANIMATIONS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+	
+	<!-- FontAwesome CSS -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+	<!-- Material Icons CSS -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" />
+
+	<!-- MATERIALIZE Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="se-pre-con"></div>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="myBar"></div>
+    </div>  
+
+<!-- REMOVING SORTABLE(drag cards) EFFECT FOR MOBILES -------------------------------------------------------------------------------------------------->
+	<div class="uk-container uk-container-expand uk-padding-large hide-on-large-only">
+
+        <div class="content-top">
+            Embark on a nostalgic journey with 'Relive Your Childhood' – a captivating collection of mini-games from the 90s. 🎮🕹️ Experience the thrill of classic games, challenge your memory 🧠, test your reflexes 🐍, and indulge in pixelated fun! Reconnect with the joy and excitement of these timeless gems. ✨
+        </div>
+
+			    <ul class="uk-child-width-1-1 uk-child-width-1-3@m uk-text-center ul-uk-lis" uk-grid="masonry: true" data-aos="slide-up" data-aos-once="true" data-aos-duration="2000" data-aos-delay="300">
+			        
+			        
+			        <li data-color="white" data-size="medium">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/dicey.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Dicey Luck</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/dicey-luck/" target="_blank" class="grey-text text-darken-4">Bring your friend and roll...</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Dicey Luck<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>How interesting learning becomes when you've such an addictive game to look forward to!<br>Read the rules carefully, it's Probability vs Luck :) <br>I learned how JavaScript manipulates the DOM elements, cool CSS fade-out animation, HTML form validation, UI/UX basics, game-play/over conditions<br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/dicey-luck"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+
+			        <li data-color="white" data-size="medium">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator uk-animation-reverse uk-transform-origin-bottom-right" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/mm.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Minesweeper</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/MinimalMinesweeper/" target="_blank" class="grey-text text-darken-4">Mini version of the classic game</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Mini Minesweeper<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>In this challenge, I attempt to code the classic game Minesweeper in JavaScript with the p5.js library. I followed The Coding Train challenge#71 on YouTube for this game (that guy's the so damn cool!). <br><br>Things learnt: OOP (Javascript), Code refactoring, Canvas (p5.js), Functions (to reuse the code)<br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/MinimalMinesweeper"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+
+			    
+			        <li data-color="white" data-size="large">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator uk-animation-reverse uk-transform-origin-top-left" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/ttt.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Unbeatable Tic-Tac-Toe</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/TicTacToe/" target="_blank" class="grey-text text-darken-4">Recursion fakes AI</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Unbeatable TicTacToe<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>I struggled for hours scrolling through tutorials, watching videos, and banging my head on the desk trying to build an unbeatable Tic Tac Toe game with a reliable Artificial Intelligence. But looking at the finished project, it seems the hustle was worth every second. It's so much using the power of Recursion in making the move look like AI!<br><br>Source: &nbsp;<a href="https://medium.freecodecamp.org/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37" target="_blank"></a><br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/TicTacToe"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+
+			        <li data-color="white" data-size="medium">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator uk-animation-reverse uk-transform-origin-top-right" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/mc.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Memory Champ</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/MemoryGameUdacity/" target="_blank" class="grey-text text-darken-4">Test your hippocampus here</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Memory Champ<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>A fun game to flex your brain muscles and match 2 cards with same image. <br><br>Behind the hood: an openedCards array to store current cards and compare if these are matched (will always have a length of 2). A matchedCards array to check if all cards have been opened (for gamover conditions).<br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/MemoryGameUdacity"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>			        
+			    </ul>
+		</div>
+
+<!--USING SORTABLE EFFECT FOR DESKTOPS & LAPTOPS ------------------------------------------------------------------------------------------------------>
+
+	<div class="uk-container uk-container-expand uk-padding-large hide-on-med-and-down">
+
+        <div class="content-top">
+            Embark on a nostalgic journey with 'Relive Your Childhood' – a captivating collection of mini-games from the 90s. 🎮🕹️ Experience the thrill of classic games, challenge your memory 🧠, test your reflexes 🐍, and indulge in pixelated fun! Reconnect with the joy and excitement of these timeless gems. ✨
+        </div>
+			    <ul class="uk-child-width-1-1 uk-child-width-1-3@m uk-text-center ul-uk-lis" uk-grid="masonry: true" data-aos="slide-up" data-aos-once="true" data-aos-duration="2000" data-aos-delay="300">
+			        <li data-color="white" data-size="medium">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/tr.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Traffic Runner</span><i class="material-icons right">more_vert</i></span>
+						      <p  style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/TrafficRunner/" target="_blank" class="grey-text text-darken-4">Look at those headlights</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Traffic Runner<i class="material-icons right">close</i></span>
+						      <p class="left-align"> <br>Who doesn't like speeding in the traffic! I made this pretty cool game where the user controls the car's speed and direction with arrow keys en route dodging other cars in the traffic. I followed Very Easy Tuts channel on YouTube for this project.<br><br>Things explored: Styling HTML divs with CSS, Javascript animation frame, Collision, Slide down function<br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/TrafficRunner"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+
+			        <li data-color="white" data-size="medium">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/hb.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Happy Bird</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/HappyBird/" target="_blank" class="grey-text text-darken-4">Let's fight gravity</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Happy Bird<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>Objective of the game is to go through pipes without touching them while fighting against the gravity that is pulling you down constantly. The game gets infinitely harder as it gets faster. The longer you survive, the more points you earn! I followed Very Easy Tuts channel on YouTube for this project.<br><br>Things explored: Functions (for code reusability), Game loop patterns, Event listeners, Collision<br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/HappyBird"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+
+			        <li data-color="white" data-size="medium">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/egg.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Catch the Eggs</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/CatchTheEgg/" target="_blank" class="grey-text text-darken-4">Gotta catch 'em all</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Catch the Eggs<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>Another classic game from the 90's when we weren't introduced to mobile gaming and desktop was the hot craze. The objective of this fairly simple yet addictive game is to catch the eggs falling from the sky(I meant the hen, lol). I followed Very Easy Tuts channel on YouTube for this project.<br><br>Things explored: Using images inside moving divs, Collision, Slide down function<br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/CatchTheEgg"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+
+
+			        <li data-color="white" data-size="medium">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator uk-animation-reverse uk-transform-origin-bottom-right" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/mm.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Minesweeper</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/MinimalMinesweeper/" target="_blank" class="grey-text text-darken-4">Mini version of the classic game</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Mini Minesweeper<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>In this challenge, I attempt to code the classic game Minesweeper in JavaScript with the p5.js library. I followed The Coding Train challenge#71 on YouTube for this game (that guy's so damn cool!). <br><br>Things learnt: OOP (Javascript), Code refactoring, Canvas (p5.js), Functions (to reuse the code)<br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/MinimalMinesweeper"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+
+			        <li data-color="white" data-size="medium">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" src="images/pp.png"><div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Ping Pong</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/PingPong/" target="_blank" class="grey-text text-darken-4">2-player pong</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">2-Player Ping Pong<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>The iconic 2-player pong with a nice song in the background while you try to beat your opponent. Pong is a fairly trivial game, but still requires a little infrastructure to do right. <br><br> This is a slightly over-engineered version, but still there is more that could have been added: <br>&#8594; Touch events - for mobile browsers we need a different design for our user input, perhaps we could support touch events for the paddle movements.<br>&#8594; CSS @media queries - we should probably scale the pong game canvas based on the users screen real estate.<br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/PingPong"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+
+			        <li data-color="white" data-size="medium">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/dicey.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Dicey Luck</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/dicey-luck/" target="_blank" class="grey-text text-darken-4">Bring your friend and roll...</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Dicey Luck<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>How interesting learning becomes when you've such an addictive game to look forward to!<br>Read the rules carefully, it's Probability vs Luck :) <br>I learned how JavaScript manipulates the DOM elements, cool CSS fade-out animation, HTML form validation, UI/UX basics, game-play/over conditions<br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/dicey-luck"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+
+			         <li data-color="white" data-size="medium">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator uk-animation-reverse uk-transform-origin-top-right" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/mc.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Memory Champ</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/MemoryGameUdacity/" target="_blank" class="grey-text text-darken-4">Test your hippocampus here</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Memory Champ<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>A fun game to flex your brain muscles and match 2 cards with same image. <br><br>Behind the hood: an openedCards array to store current cards and compare if these are matched (will always have a length of 2). A matchedCards array to check if all cards have been opened (for gamover conditions).<br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/MemoryGameUdacity"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+
+			        <li data-color="white" data-size="large">
+			            <div class="card uk-card">
+						    <div class="card-image waves-effect waves-block waves-light">
+						      <img class="activator uk-animation-reverse uk-transform-origin-top-left" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" src="images/ttt.png">
+						      <div class="uk-position-cover"></div>
+						    </div>
+						    <div class="card-content">
+						      <span class="card-title activator grey-text text-darken-4"><span class="blue-text text-darken-4">Unbeatable Tic-Tac-Toe</span><i class="material-icons right">more_vert</i></span>
+						      <p style="margin-left: -10%;"><a href="https://aikanshgarg.github.io/TicTacToe/" target="_blank" class="grey-text text-darken-4">Recursion fakes AI</a></p>
+						    </div>
+						    <div class="card-reveal">
+						      <span class="card-title grey-text text-darken-4">Unbeatable TicTacToe<i class="material-icons right">close</i></span>
+						      <p class="left-align"><br>I struggled for hours scrolling through tutorials, watching videos, and banging my head on the desk trying to build an unbeatable Tic Tac Toe game with a reliable Artificial Intelligence. But looking at the finished project, it seems the hustle was worth every second. It's so much using the power of Recursion in making the move look like AI!<br><br>Source: &nbsp;<a href="https://medium.freecodecamp.org/how-to-make-your-tic-tac-toe-game-unbeatable-by-using-the-minimax-algorithm-9d690bad4b37" target="_blank"></a><br><br><a style="text-decoration: none;" href="https://github.com/aikanshgarg/TicTacToe"><span class="blue-text text-darken-4 code-link">Check out the code?</span></a></p>
+						    </div>
+						</div>
+			        </li>
+			    </ul>
+
+			</div>
+
+
+		<footer class="page-footer blue" style="position: relative;">
+		    <div class="footer-copyright">
+		      <div class="container center">
+		      <i class="far fa-copyright"></i> Designed & Developed with&nbsp;<i class="fas fa-heart my-animated my-pulse" style="font-size: 18px;"></i>&nbsp;by <a href="https://www.linkedin.com/in/aikansh-garg/" class="blue-text text-darken-4 text-lighten-3">Aikansh Garg</a>
+		      </div>
+		    </div>
+	    </footer>
+
+      <!-- AOS JS(ANIMATIONS ON SCROLL) -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+
+	<!-- UIkit JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/js/uikit-icons.min.js"></script>
+
+	<!-- MATERIALIZE JS -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
