@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- chrome address bar color -->
+    <meta name="theme-color" content="#F44336" />
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Kanit|Pacifico|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title>Theme Switcher</title>
+</head>
+<body>
+	<div class="container"> 
+		<div class="title-row">
+		    <h1 class="flex-1">Choose your theme</h1>
+		    <div class="font">
+				<label for="font">Font</label>
+				<select class="js-font-select" data-theme-value="--body-font">
+					<option value="" selected>Choose a font</option>
+					<option value="Roboto Slab, serif">Serif</option>
+					<option value="Pacifico, cursive">Cursive</option>
+					<option value="Kanit, sans-serif">Sans-Serif</option>
+				</select>
+		    </div>
+		    
+		    <div class="text-color">
+		      <label for="text_color">Text Color</label>
+		      <input type="color" id="text_color" class="js-text-color-picker" data-theme-value="--text-color" />
+		    </div>
+		    
+		    <div class="bg-color">
+			    <label for="background_color">Background Color</label>
+			    <input type="color" id="background_color" class="js-bg-color-picker" data-theme-value="--background-color" />
+		    </div>
+		</div>
+	  
+		<div class="card-grid">
+			<div class="card">
+			  <img src="https://images.pexels.com/photos/2035215/pexels-photo-2035215.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+			  <div class="card-content">
+			    <h3>Card title</h3>
+			    <p>Card description of some type. And more content that wraps two lines</p>
+			  </div>
+			</div>
+
+			<div class="card">
+			  <img src="https://images.pexels.com/photos/1552641/pexels-photo-1552641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+			  <div class="card-content">
+			    <h3>Card title</h3>
+			    <p>Card description of some type. And more content that wraps two lines</p>
+			  </div>
+			</div>
+
+			<div class="card">
+			  <img src="https://images.pexels.com/photos/1054777/pexels-photo-1054777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
+			  <div class="card-content">
+			    <h3>Card title</h3>
+			    <p>Card description of some type. And more content that wraps two lines</p>
+			  </div>
+			</div>
+		</div>
+	</div>
+
+<!-- LIVERELOAD JS (for development only) -->
+<!-- <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script> -->
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

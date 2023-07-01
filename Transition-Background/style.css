@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #FE6265;
+	color: #fff;
+	background-image: radial-gradient( #FE6265 50%, #F93C43 90%);
+	overflow-x: hidden;
+	transition: all 1s ease; /*to create visual effect on calling bgChanger function*/
+}
+
+header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.intro-text h1 {
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+.intro-text p {
+	font-size: 22px;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	color: #F93C43;
+}
+
+section img{
+	width: 90%;
+	height: 70%;
+	object-fit: cover;
+}
+
+.page2 {
+	text-align: center;
+	width: 70%;
+}
+
+.page2 h1 {
+	margin-bottom: 20px;
+	font-size: 30px;
+	opacity: 0;
+	transition: all 3s ease;
+}
+
+.page2 p {
+	opacity: 0;
+	transition: all 5s ease;
+}
+
+.bg-active {
+	background: #fff;
+}
+
+@media screen and (max-width: 600px) {
+	.intro-text h1 {
+		font-size: 25px;
+		padding: 1rem;
+		margin-bottom: 0;
+	}
+	.page2 p {
+		font-size: 14px;
+		padding: 1rem;
+	}
+	.intro-text p{
+		font-size: 14px;
+	    padding: 3rem;
+	    padding-top: 0;
+	}
+	.page2 h1 {
+		font-size: 25px;
+		margin-bottom: 0;
+	}
+
+}

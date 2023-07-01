@@ -1,0 +1,24 @@
+.container, body, ul{
+	color: #fff;
+	font-family: 'Merienda', cursive;
+	background: #fe8c00;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.collection .collection-item  {
+    background: transparent;
+}
+
+.collection.with-header .collection-header {
+	background: #1b5e20;
+}
+::placeholder , input, a {
+	color: #fff;
+	font-family: 'Merienda', cursive;
+}
+
+@media screen and (max-width: 480px) {	
+	h1 {
+		font-size: 2.2rem;
+	}	
+}
