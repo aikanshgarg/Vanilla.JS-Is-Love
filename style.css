@@ -30,6 +30,15 @@
   background: #0e141b; 
 }
 
+body {
+  font-size: 20px;
+
+  .card {
+    .card-title {
+      font-weight: bold;
+    }
+  } 
+}
 
 /*SCROLL INDICATOR*/
 .progress-container {
@@ -49,6 +58,7 @@
 }
 
 .content-top {
+  font-size: 20px;
   background-color: #161f27;
   color: #fff;
   box-shadow: none;
@@ -58,6 +68,9 @@
   margin-bottom: 3rem;
   text-align: center;
   text-wrap: balance;
+  @media(max-width: 768px) {
+    padding: 2rem 3rem;
+  }
 }
 
 /*BECAUSE MATERIALIZE AND CSS PULSE COLLIDE*/
@@ -88,13 +101,18 @@ body {
 }
 
 .card {
-	cursor: -webkit-grab;
-  background-color: #fafafa;
+  background-color: #f6faff;
   border-radius: 6px;
+
+  .card-content {
+    background-color: #f6faff;
+    background-image: linear-gradient(180deg,hsla(0,0%,100%,0),#f6faff);
+  }
 }
 .card-image {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  background-color: #f6faff;
 }
 
 .uk-subnav-pill>.uk-active>a {
