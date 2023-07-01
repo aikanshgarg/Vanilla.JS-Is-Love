@@ -57,7 +57,7 @@ body {
   width: 0%;
 }
 
-.content-top {
+.content-top, .content-bottom {
   font-size: 20px;
   background-color: #161f27;
   color: #fff;
@@ -71,6 +71,10 @@ body {
   @media(max-width: 768px) {
     padding: 2rem 3rem;
   }
+}
+
+.content-bottom {
+  margin-top: 3rem;
 }
 
 /*BECAUSE MATERIALIZE AND CSS PULSE COLLIDE*/
